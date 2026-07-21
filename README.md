@@ -22,17 +22,29 @@ npm -v
 
 ### 2. Installation
 
-Clone the repository:
+2.1 Clone the repository:
 
 ```bash
-git clone https://github.com/umfrancisco/Github-Profile-React.git
-cd Github-Profile-React
+git clone https://github.com/umfrancisco/my-developer-portfolio-react.git
+cd my-developer-portfolio-react
 ```
 
-Install dependencies:
+2.2 Install dependencies:
 
 ```bash
 npm install
+```
+
+2.3 Add your github and other professional informations at App.jsx
+
+```javascript
+<Profile 
+  githubUrl="https://github.com/your_github"
+  linkedinUrl="https://www.linkedin.com/in/your_name"
+  fullName="Your full name"
+  techStack = "Your tech stack"
+/>
+<RepoList username="your_github_username" />
 ```
 
 ---
