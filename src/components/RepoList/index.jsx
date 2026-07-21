@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import styles from './RepoList.module.css';
 
-const RepoList = ({ userName }) => {
+const RepoList = ({ username }) => {
+
     const [repos, setRepos] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         setIsLoading(true);
-        fetch(`https://api.github.com/users/umfrancisco/starred`)
+        fetch(`https://api.github.com/users/${username}/starred`)
         .then(res => res.json())
         .then(resJson => {
             setTimeout(() => {
@@ -15,7 +16,7 @@ const RepoList = ({ userName }) => {
                 setRepos(resJson);
             }, 1000);
         })
-    }, [userName])
+    }, [username])
 
     return (
         <div className="container">

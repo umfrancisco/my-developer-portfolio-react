@@ -5,8 +5,13 @@ function App() {
   return(
     <div>
       <>
-        <Profile userName={'umfrancisco'} />
-        <RepoList userName={'umfrancisco'} />
+        <Profile 
+          githubUrl="https://github.com/umfrancisco"
+          linkedinUrl="https://www.linkedin.com/in/francisco-guitler"
+          fullName="Francisco Guitler"
+          techStack = "Full Stack Developer"
+        />
+        <RepoList username="umfrancisco" />
       </>
     </div>
   )
