@@ -127,20 +127,6 @@ This project supports official Vite React plugins:
 
 ---
 
-## Linting
-
-For more robust applications, consider:
-
-* Using **TypeScript**
-* Enabling **type-aware ESLint rules**
-
-Useful resources:
-
-* https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts
-* https://typescript-eslint.io
-
----
-
 ## License
 
 This project is open source and available under the MIT License.
