@@ -1,17 +1,41 @@
-# React + Vite
+# Developer Portfolio – React + Vite
 
-This project provides a minimal setup to get **React** working with **Vite**, including Hot Module Replacement (HMR) and basic ESLint configuration.
+This project is a **developer portfolio web application** built with **React** and **Vite**. It showcases your professional profile, including GitHub repositories, tech stack, and social links.
+
+Designed to be **fast, minimal, and easily customizable**, this project is ideal for developers who want a simple way to present their work.
+
+---
+
+## Features
+
+* Fast development with Vite
+* GitHub repositories integration
+* Customizable profile section
+* Basic ESLint configuration
+* Clean and minimal UI
+
+---
+
+## Tech Stack
+
+* **React**
+* **Vite**
+* **JavaScript (ES6+)**
+* **CSS**
+* **ESLint**
+
+---
 
 ## Getting Started
 
 ### 1. Prerequisites
 
-Make sure you have the following installed:
+Make sure you have installed:
 
-* **Node.js** (recommended: version 18+)
-* **npm** (comes with Node) or **yarn**
+* **Node.js** (version 18 or higher recommended)
+* **npm** or **yarn**
 
-You can check your versions with:
+Check your versions:
 
 ```bash
 node -v
@@ -22,42 +46,47 @@ npm -v
 
 ### 2. Installation
 
-2.1 Clone the repository:
+Clone the repository:
 
 ```bash
-git clone https://github.com/umfrancisco/my-developer-portfolio-react.git
-cd my-developer-portfolio-react
+git clone https://github.com/umfrancisco/developer-portfolio-react.git
+cd developer-portfolio-react
 ```
 
-2.2 Install dependencies:
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-2.3 Add your github and other professional informations at App.jsx
+---
 
-```javascript
+### 3. Configuration
+
+Edit the `App.jsx` file to personalize your portfolio:
+
+```jsx
 <Profile 
   githubUrl="https://github.com/your_github"
   linkedinUrl="https://www.linkedin.com/in/your_name"
   fullName="Your full name"
-  techStack = "Your tech stack"
+  techStack="Your tech stack"
 />
+
 <RepoList username="your_github_username" />
 ```
 
 ---
 
-### 3. Running the Development Server
+### 4. Running the Project
 
-Start the app in development mode:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Then open your browser and go to:
+Access the app at:
 
 ```
 http://localhost:5173
@@ -65,15 +94,15 @@ http://localhost:5173
 
 ---
 
-### 4. Build for Production
+### 5. Build for Production
 
-To generate an optimized production build:
+Generate a production build:
 
 ```bash
 npm run build
 ```
 
-Preview the production build locally:
+Preview the production build:
 
 ```bash
 npm run preview
@@ -81,48 +110,46 @@ npm run preview
 
 ---
 
-## ⚙️ Available Plugins
+## Available Scripts
 
-Currently, two official plugins are available:
-
-* **@vitejs/plugin-react**
-  Uses Babel for Fast Refresh
-  https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react
-
-* **@vitejs/plugin-react-swc**
-  Uses SWC for Fast Refresh
-  https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc
-
----
-
-## 🧹 ESLint Configuration
-
-For production applications, it is recommended to use **TypeScript** with type-aware linting.
-
-Check out the official TypeScript template:
-https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts
-
-And the TypeScript ESLint docs:
-https://typescript-eslint.io
-
----
-
-## 📌 Scripts
-
-* `npm run dev` → Start development server
-* `npm run build` → Build for production
+* `npm run dev` → Run development server
+* `npm run build` → Build project for production
 * `npm run preview` → Preview production build
 
 ---
 
-## 📄 Notes
+## Plugins
 
-This is a minimal setup intended as a starting point. You can extend it with:
+This project supports official Vite React plugins:
 
-* Routing (React Router)
-* State management (Redux, Zustand)
-* UI libraries (MUI, Tailwind)
-* API integration
+* **@vitejs/plugin-react** (Babel-based Fast Refresh)
+* **@vitejs/plugin-react-swc** (SWC-based Fast Refresh)
+
+---
+
+## Linting
+
+For more robust applications, consider:
+
+* Using **TypeScript**
+* Enabling **type-aware ESLint rules**
+
+Useful resources:
+
+* https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts
+* https://typescript-eslint.io
+
+---
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
 
 ---
 
